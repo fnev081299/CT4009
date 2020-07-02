@@ -1,0 +1,21 @@
+img {
+	margin-left: 200px;
+	height:250px; 
+	color: black;
+}
+
+#mapInput {
+	height: 300px;
+	width: 650px;
+	margin-left: 60px;
+}
+
+h4 {
+	margin-left: 50px;
+	color: black;
+}
+
+section {
+	height: 1550px;
+}
+

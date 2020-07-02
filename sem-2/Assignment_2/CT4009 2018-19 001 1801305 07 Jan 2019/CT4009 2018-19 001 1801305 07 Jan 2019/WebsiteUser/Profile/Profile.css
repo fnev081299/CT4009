@@ -1,0 +1,6 @@
+/*adds style for the users profile titles eg their university*/
+.title{
+    color: grey;
+    font-size: 18px;
+    text-align: center;
+}

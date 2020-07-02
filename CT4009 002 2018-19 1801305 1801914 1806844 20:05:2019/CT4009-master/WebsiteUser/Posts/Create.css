@@ -1,0 +1,7 @@
+/*places the img tag in a cetrain position*/
+img {
+    left: 20%
+	margin-left: 200px;
+	height:250px; 
+	color: black;
+}

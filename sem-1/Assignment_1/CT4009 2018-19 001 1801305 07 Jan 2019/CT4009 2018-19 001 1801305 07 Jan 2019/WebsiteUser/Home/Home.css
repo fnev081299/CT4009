@@ -1,0 +1,27 @@
+/*body style*/
+body{
+    margin: 0;
+    padding: 0;
+    /* make the background slightly tinted */
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../Images/hpage.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/*hovering over the different table parts allow the different lines to change to a grey color when hovered over*/
+tr:hover {
+    background-color: grey;
+}
+
+/*alters the table*/
+.View{
+    color: white;
+    padding: 15px;
+    border: transparent;
+    border-bottom-color: white;
+    text-align: left;
+    padding: 5%;
+    margin-left: 10%;
+    font-size: 18px;
+    border-radius: 20ps;
+}

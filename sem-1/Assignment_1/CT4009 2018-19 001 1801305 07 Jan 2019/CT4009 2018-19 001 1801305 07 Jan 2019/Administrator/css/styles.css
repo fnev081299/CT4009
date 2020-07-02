@@ -1,0 +1,147 @@
+/*same comments as the .css in the users file */
+header, section, footer, aside, nav, article, figure, figcaption{
+	bisplay: block;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../Images/Summaries.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Inconsolata', monospace; 
+}
+
+.notin{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../Images/Adminlogin.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Inconsolata', monospace; 
+}
+
+form{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,1,0.5));
+    color: white;
+    top: 50%;
+    margin-left: 50%; 
+    position: absolute;
+    transform: translate(-0%,-50%); 
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 10px;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
+
+section{
+	width: 940px;
+	height: 700px;
+	margin: 0px auto 0px auto;
+	border: 2px solid #000000;
+	background-color: #aeaca8;
+}
+
+input{
+    font-family: 'Inconsolata', monospace;
+	font-size: 16px;
+	padding: 7px;
+	outline: 0;
+	border: 0;
+	width: 250;
+	background: #EBE8DE;
+	border-radius: 5px;
+}
+
+label{
+	margin-left: 50px;
+	width: 145px;
+	display: inline-block;
+	color: white;
+}
+
+input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+}
+
+input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: grey;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    background: darkgrey;
+    color: white;
+}
+
+.company{
+    color: white;
+    float: left;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.main-nav li{
+    display: inline-block;
+}
+
+.main-nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+}
+
+.main-nav li a:hover{
+    border: 1px solid white;
+    transition: all 500ms ease;
+    opacity: 0.7;
+}
+
+.i{
+    max-height: 300px;
+    max-width: 300px;
+    width: auto;
+    height:auto;
+    border-radius: 20px;
+}
+
+.Post{
+    position: absolute;
+    top:20%; left:50%;
+    transform: translate(-100%,-50%);
+}
+
+.wpost{
+    font-size: 20px;
+}
+
+.View{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    padding: 20px;
+}

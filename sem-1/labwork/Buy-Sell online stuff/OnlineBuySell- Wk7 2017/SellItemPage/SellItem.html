@@ -1,0 +1,86 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title> Flogger - Sell an Item </title>
+		<link href="../css/styles.css" type="text/css" rel = "stylesheet"/>
+		<link href="./SellItem.css" type="text/css" rel = "stylesheet"/>
+		
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+				
+		<script src="../lib/js/indexeddb.js"></script>
+	</head>
+
+	<body>
+
+		<!-- write comments when necessary!! -->
+		<header>
+					
+			<nav>
+				<ul>
+					<li><a href="../LoginPage/Login.html">LOGIN</a></li>
+					<li><a href="../RegistrationPage/Registration.html">REGISTRATION</a></li>
+					<li><a href="../SellItemPage/SellItem.html" class="current">SELL</a></li>
+					<li><a href="../ListAllItemsPage/ListAllItems.html">BUY</a></li>
+					<li><a href="../UpdateRegistrationDetailsPage/UpdateRegistrationDetails.html">UPDATE REGISTRATION DETAILS</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<section>
+		
+			<h2> To sell an item, fill out the form below and click the Submit button </h2>
+			
+			<form id="formSellItem">
+				<label> Item name: </label>
+				<input type="text" id = "txtItemName" name="itemName" required="required"> <br> <br> 
+				
+				<label> Item Description: </label>
+				<textarea rows="4" cols="50" id = "txtItemDesc" name="itemDesc"> </textarea> <br> <br> 
+				
+				<label> Price: </label>
+				<input type="text" id = "txtPrice" name="price" required="required"> <br> <br> 
+				
+				<label for="file">Choose item image to upload</label> 
+				<input type="file" id="fileItemImage" name="file"> <br> <br> 
+				
+				<img src="" alt="Image preview..." id = "bannerImg"> <br> <br> 
+				
+				<h4>Item Location (Select item location in the Map below): </h4> 
+				<div id="mapInput"></div>  <br> 
+		
+				<label>House Name or No: </label>
+				<input type="text"  id="txtHouseNameOrNo" name="houseNameOrNo" /> <br> <br> 
+				<label>Street Name: </label>
+				<input type="text"  id="txtStreetName" name="streetName"/> <br> <br> 
+				<label>Area Name: </label>
+				<input type="text"  id="txtAreaName" name="areaName"/> <br> <br> 
+				<label>City Name: </label>
+				<input type="text"  id="txtCityName" name="cityName"/> <br> <br> 
+				<label>County Name: </label>
+				<input type="text"  id="txtCountyName" name="countyName"/> <br> <br>
+				<label>Country Name: </label>
+				<input type="text"  id="txtCountryName" name="countryName"/> <br> <br>
+				<label>Post code: </label>
+				<input type="text"  id="txtPostCode" name="postCode"/> <br> <br>
+				<label>Latitude: </label>  
+				<input type="text" id="txtLatitude" name="latitude"/> <br> <br>
+				<label>Longitude: </label> 
+				<input type="text" id="txtLongitude" name="longitude"/> <br> <br>
+				
+				<input type="submit" id = "btnSaveItem" value="Save">
+				
+			</form> 
+		</section>
+		
+		<footer>
+			&copy; 2017 Flogger
+		</footer>
+		
+		<script src="./SellItem.js"></script>
+		<script src="./SellItemDAO.js"></script>
+		
+	</body>
+
+</html>

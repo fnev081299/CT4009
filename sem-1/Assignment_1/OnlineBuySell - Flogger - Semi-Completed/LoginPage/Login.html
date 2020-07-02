@@ -1,0 +1,58 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title> Flogger - Buy and sell your Item Online - Login </title>
+		<link href="../css/styles.css" type="text/css" rel = "stylesheet"/>
+		<link href="./Login.css" type="text/css" rel = "stylesheet"/>
+		
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+			
+		<script src="../lib/js/indexeddb.js"></script>
+	</head>
+
+	<body>
+
+		<!-- write comments when necessary!! -->
+		<header>
+					
+			<nav>
+				<ul>
+					<li><a href="../LoginPage/Login.html" class="current">LOGIN</a></li>
+					<li><a href="../RegistrationPage/Registration.html">REGISTRATION</a></li>
+					<li><a href="../SellItemPage/SellItem.html">SELL</a></li>
+					<li><a href="../ListAllItemsPage/ListAllItems.html">BUY</a></li>
+					<li><a href="../UpdateRegistrationDetailsPage/UpdateRegistrationDetails.html">UPDATE REGISTRATION DETAILS</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section>
+		
+			<h2> Please login to buy and sell your Item </h2>
+			
+			<form id="formUserLogin">
+				<label> Email: </label>
+				<input type="email" id = "txtEmail" name="email" required="required"> <br> <br>
+				
+				<label> Password: </label>
+				<input type="password" id = "txtPassword" name="password" required="required"> <br><br> 
+				
+				<input type="submit" id = "btnLogin" value="Login">
+				
+			</form> 
+			
+			<h4> Create a new account <a href="../RegistrationPage/Registration.html">Click here</a> </h4>
+
+		</section>
+		
+		<footer>
+			&copy; 2017 Flogger
+		</footer>
+		
+		<script src="./Login.js"></script>
+		<script src="./LoginDAO.js"></script>
+	</body>
+
+</html>
+

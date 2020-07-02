@@ -1,0 +1,40 @@
+<html>
+
+<head>
+	<title> Post </title>
+    <!--connect the css-->
+    <link href="../css/styles.css" type="text/css" rel = "stylesheet"/>
+    <link href="./Create.css" type="text/css" rel = "stylesheet"/>
+   <!--connect eh jquery and the index db-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+    <!--navigation bar-->
+    <!--navigation bar-->
+    <div class="nav">
+        <ul class="main-nav">
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../login/Login.html">Logout</a></li>
+            <li><a href="../Message/message.html">Message</a></li>
+            <li><a href="../Profile/Profile.html">Your Profile</a></li>
+        </ul>
+    </div>
+    
+    <!--site name-->
+    <h1 class="company"> UltraC</h1>
+    
+    <!--post form for the user to fill out-->
+    <form method="POST" action="Create.php" id="formCreatePost" class="CreatePost" enctype="multipart/form-data"> 
+       <br>
+        <textarea rows="4" cols="50" id= "Post_content" name="Post_content" placeholder="Post" required="required"></textarea><br><br>
+        
+        <input type="file" id="fileImage" name="file"><br><br>
+        
+        <img src="" alt="Image..." id = "bannerImg"><br><br>
+        
+        <input type="submit" id="btnSave" name="SavePost" class="btn-margin"  value="Save"><br>
+    </form>
+    
+</body>
+</html>

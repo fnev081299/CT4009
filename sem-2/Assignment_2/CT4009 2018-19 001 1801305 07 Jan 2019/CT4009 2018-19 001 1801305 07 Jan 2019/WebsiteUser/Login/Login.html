@@ -1,0 +1,42 @@
+<html>
+
+<head>
+	<title> Login </title>
+    <!--connect the css-->
+    <link href="../css/styles.css" type="text/css" rel = "stylesheet"/>
+    <link href="./Login.css" type="text/css" rel = "stylesheet"/>
+    <!--connect the jquery and the indexdb-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="../../lib/indexeddb.js"></script>
+</head>
+
+<body class="notin">
+    <!--navigation bar-->
+    <div class="nav">
+        <ul class="main-nav">
+            <li><a href="../../Administrator/Login/AdminLogin.html">Admin</a></li>
+            <li><a href="../About/About.html">About</a></li>
+            <li><a href="Login.html">Login</a></li>
+        </ul>
+    </div>
+    
+    <!--site name-->
+    <h1 class="company"> UltraC</h1>
+    
+    <!--login form-->
+    <form class="login" id="loginForm">
+        <h1>Login Here</h1>
+            <!--username is entered here-->
+            <p>Username</p>  
+                <input id="Username" type="text" name="username" required="required" placeholder="Enter Username">
+            <!--password is eneteed here-->
+            <p>Password</p>
+                <input id="Password" type="password" name="password" required="required" placeholder="Enter Password">
+            <input id="Login" type="submit" value="Submit">
+        <a id="new_person" href="../Register/Register.html">Register</a>
+        </form>
+    <!--connection to the js-->
+    <script src="./Login.js"></script>
+    <script src="./LoginDAO.js"></script>
+</body>    
+</html>

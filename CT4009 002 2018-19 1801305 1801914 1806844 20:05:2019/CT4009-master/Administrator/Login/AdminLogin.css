@@ -1,0 +1,25 @@
+/*adds styling to the login for the admin*/
+.login input{
+    width: 100%;
+    margin-bottom: 20%; 
+}
+
+.login p{
+	color: white;
+}
+
+.login a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.login a:hover{
+    color: grey;
+}
+
+.login{
+    margin-left: 50%;
+    transform: translate(-80%,-50%);
+}

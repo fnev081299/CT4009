@@ -1,0 +1,4 @@
+AuthName "Members Area"
+AuthType Basic
+AuthUserFile /home/ct4009-velrte/public_html/ultraC/.htpasswd
+require valid-user

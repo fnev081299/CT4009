@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Profile</title>
+    <!--links to the css-->
+    <link href="../css/styles.css" type="text/css" rel = "stylesheet"/>
+    <link href="./Profile.css" type="text/css" rel = "stylesheet"/>
+    <!--links to the jquery and the indexdb-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="../../lib/indexeddb.js"></script>
+</head>
+
+<body>
+    <!--navigation bar-->
+    <div class="nav">
+        <ul class="main-nav">
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../login/Login.html">Logout</a></li>
+            <li><a href="../Message/message.html">Message</a></li>
+            <li><a href="../Profile/Profile.html">Your Profile</a></li>
+            <!--new link to block users-->
+            <li><a href="../BlockReport/BlockReport.html">Report</a></li>
+            <!--new link to edit the profile-->
+            <li><a href="../EditProfile/EditProfile.html">Edit</a></li>
+        </ul>
+    </div>
+    
+    <h1 class="company">Profile</h1>
+    <!--form displaying the user information-->
+    <form id="Prof">
+        <img id="ImagePreview" class="i">
+        <h1 id="ProfileName"></h1>
+        <p class="title">Student</p>
+        <p class="title">University of Gloucester</p>
+        <p class="title" id="bio">Bio</p>
+        <input type="submit" value="Contact">
+    </form>
+    <!--connects to the js-->
+    <script src="./Profile.js"></script>
+    <script src="./ProfileDAO.js"></script>
+</body>
+</html>

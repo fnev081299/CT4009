@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert Animal</title>
+	
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+	
+<script 
+	src='../lib/js/indexeddb.js'></script>
+</head>
+
+<body>
+	<form id="formInsertAnimal">
+		Animal Name:
+		<input type="text" id="txtAnimalName"> <br> <br>
+		Select animal picture:<br>
+		<input type="file" id="fileInputAnimalPicture"> <br> <br>
+
+		<img src="" id="imgPreview" alt="Preview"> <br> <br>
+		
+		<input type="submit" id="btnSubmit">
+
+		<script src="InsertAnimal.js"></script>
+		<script src="InsertAnimalDAO.js"></script>
+	</form>
+</body>
+</html>

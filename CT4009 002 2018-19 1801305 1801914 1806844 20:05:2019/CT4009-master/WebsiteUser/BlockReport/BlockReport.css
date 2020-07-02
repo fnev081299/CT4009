@@ -1,0 +1,4 @@
+/*this is making the box bigger for the form*/
+.box[type="text"]{
+    width: 500px;
+}

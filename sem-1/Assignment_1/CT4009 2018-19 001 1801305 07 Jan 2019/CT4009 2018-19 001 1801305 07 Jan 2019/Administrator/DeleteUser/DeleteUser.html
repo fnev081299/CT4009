@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Delete users</title>
+    <!--connect to the css-->
+    <link href="../css/styles.css" type="text/css" rel = "stylesheet"/>
+    <link href="./DeleteUser.css" type="text/css" rel = "stylesheet"/>
+</head>
+
+<body>
+    <!--navigation bar-->
+     <div class="nav">
+        <ul class="main-nav">
+            <li><a href="../ViewPostsSummary/PostSummary.html">Home</a></li>
+            <li><a href="../../WebsiteUser/Login/Login.html">Logout</a></li>
+            <li><a href="../DeleteUser/DeleteUser.html">Delete User</a></li>
+            <li><a href="../ViewAllReportings/ViewAllReports.html">Reports</a></li>
+        </ul>
+    </div>
+
+<h1 class="company">Block or Delete User</h1>
+    
+    <!--main form for the admin to enter the information needed to do actions-->
+    <form action="message.php" method="post">
+            <input class="box" type="text" name="username" required="required" placeholder="Username of person"><br>
+            <input class="box"type="text" name="message" required="required" placeholder="Resaon"><br>
+            <input type="submit" value="Delete">
+            <input type="submit" value="Block">
+    </form>
+    
+    <!--rules to remind the admin-->
+    <form class="Rules">
+        <h1>Rules</h1>
+            Blocking someone will disable their account for a week.<br>
+        Deleting someone will permanently delete them from the system.
+    </form>
+</body>
+</html>

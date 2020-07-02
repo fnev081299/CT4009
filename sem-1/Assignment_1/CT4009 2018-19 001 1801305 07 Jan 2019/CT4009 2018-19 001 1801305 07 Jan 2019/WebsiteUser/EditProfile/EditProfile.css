@@ -1,0 +1,15 @@
+/* profile picture*/
+.profile-picture{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+}
+
+/*area to view the profile picture*/
+#ImagePreview{
+    max-width: 300px;
+    max-height: 200px;
+}

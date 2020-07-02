@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title> Registration </title>
+    <!--connects to the css-->
+    <link href="../css/styles.css" type="text/css" rel = "stylesheet"/>
+    <link href="./Register.css" type="text/css" rel = "stylesheet"/>
+    
+    <!--links the jquery and the indexdb-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="../../lib/indexeddb.js"></script> 
+</head>
+
+<body class="notin">
+    <!--navigation bar-->
+    <div class="nav">
+        <ul class="main-nav">
+            <li><a href="../../Administrator/Login/AdminLogin.html">Admin</a></li>
+            <li><a href="../About/About.html">About</a></li>
+            <li><a href="../login/Login.html">Login</a></li>
+        </ul>
+    </div>
+    
+    <!--company name-->    
+    <h1 class="company"> UltraC</h1>
+    
+    <!--main registration form-->
+    <form id="formUserRegistation" class="register">   
+    
+        <h1>Register Here</h1>
+        
+		<input class="middle" type="text" id="firstname" name="firstname" placeholder="First Name" required="required"><br> 
+		
+		<input class="middle" type="text" id="lastname" name="lastname" placeholder="Last Name" required="required"><br> 
+		
+		<input class="middle" type="text" id="addressline1" name="addressline1" placeholder="Address Line 1" required="required"><br> 
+		
+		<input class="middle" type="text" placeholder="Address Line 2" id="addressline2" name="addressline2"><br> 
+		
+		<input class="middle" type="text" id="postcode" name="postcode" placeholder="Post Code" required="required"><br> 
+		
+		<input class="middle" type="text" id="city" name="city" placeholder="City" required="required"><br> 
+		
+		<input class="middle" type="text" id="username" name="username" placeholder="Username" required="required"><br> 
+		
+		<input class="middle" id = "Password"  type="password" id="password"  name="password" placeholder="Password" required="required"><br> 
+		
+		<input class="middle" id = "ConfirmPassword" type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password" required="required"><br> 
+		<br>
+        
+		<input class="middle" type="submit" id="register" value="Register"><br>
+        
+    </form>
+        <!--terms and conditions-->
+         <form class="tandc">   
+        <h2>Terms and conditions:</h2>
+        <p>We will not sell your information to anyone.<br> We will not use your information against you <br> or in any way shape or form against you.</p>
+    </form>
+    <!--links the js-->
+    <script src="./Register.js"></script>
+    <script src="./RegistrationDAO.js"></script>
+    
+</body>
+</html>

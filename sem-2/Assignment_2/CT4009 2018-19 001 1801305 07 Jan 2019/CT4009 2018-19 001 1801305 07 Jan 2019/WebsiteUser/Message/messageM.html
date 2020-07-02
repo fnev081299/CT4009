@@ -1,0 +1,40 @@
+<!-- links the messages php -->
+<?php 
+    $messages = [];
+    include './includes/loadMessages.php';
+?>
+<html>
+<head>
+	<title> Message </title>
+    <!--connect to the css-->
+    <link href="../css/styles.css" type="text/css" rel = "stylesheet"/>
+    <link href="./EditProfile.css" type="text/css" rel = "stylesheet"/>
+</head>
+
+<body>
+    <!--name of the site-->
+    <h1 class="company">Messages</h1>
+<!--navigation bar-->	
+<div class="nav">
+        <ul class="main-nav">
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../login/Login.html">Logout</a></li>
+            <li><a href="../Message/message.html">Message</a></li>
+            <!--additional messages navigator-->
+            <li><a href="../Message/messages.html">Messages</a></li>
+            <li><a href="../Profile/Profile.html">Your Profile</a></li>
+        </ul>
+ </div>
+
+    <!-- table to display previous massages -->
+<main>
+    <h1> Comments </h1>
+    <?php include './includes/messageList.php'; ?>
+    <form method="POST" action="/postMessage.php" class="MessageForm">
+    <div>
+        <textarea name="message" id="message" rows="1" placeholder="Messsge"> </textarea>
+    </div>
+        <button type="submit" class="button"> Send </button>
+    <div>
+</body>    
+</html>

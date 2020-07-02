@@ -1,0 +1,57 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title> Flogger - Items for Sale </title>
+		<link href="../css/styles.css" type="text/css" rel = "stylesheet"/>
+		
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+				
+		<script src="../lib/js/indexeddb.js"></script>
+	</head>
+
+	<body>
+
+		<header>
+					
+			<nav>
+				<ul>
+					<li><a href="../LoginPage/Login.html">LOGIN</a></li>
+					<li><a href="../RegistrationPage/Registration.html">REGISTRATION</a></li>
+					<li><a href="../SellItemPage/SellItem.html">SELL</a></li>
+					<li><a href="../ListAllItemsPage/ListAllItems.html" class="current">BUY</a></li>
+					<li><a href="../UpdateRegistrationDetailsPage/UpdateRegistrationDetails.html">UPDATE REGISTRATION DETAILS</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<section>
+		
+			<h2> Items for Sale </h2>
+			<table border="1" id="tableAllItems">
+				<tr class="aligncenter" style="font-weight:bold;">
+					<th>Item No</th>
+					<th>Seller ID</th>
+					<th>Item Name</th>
+					<th>Item Desc</th>
+					<th>Image</th>
+					<th>Price</th>
+					<th>Location</th>
+					<th>Latitude</th>
+					<th>Longitude</th>
+					<th>Action1</th>
+					<th>Action2</th>
+				</tr>
+			</table>
+		
+		</section>
+		
+		<footer>
+			&copy; 2017 Flogger
+		</footer>
+		
+		<script src="./ListAllItems.js"></script>
+		<script src="./ListAllItemsDAO.js"></script>
+	</body>
+
+</html>

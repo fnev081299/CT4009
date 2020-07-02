@@ -1,0 +1,35 @@
+<html>
+
+<head>
+	<title> Home-Page </title>
+    <!--connect to the css-->
+    <link href="../css/styles.css" type="text/css" rel = "stylesheet"/>
+    <link href="./Home.css" type="text/css" rel = "stylesheet"/>
+    <!--connects the jquery and the indexdb-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+<body>
+    <!--main navigation bar-->
+    <div class="nav">
+        <ul class="main-nav">
+            <li><a href="../Home/Home.html">Home</a></li>
+            <!--additional post creator navigator-->
+            <li><a href="../Posts/Create.html">Post</a></li>
+            <li ><a href="../Login/Logout.php">Logout</a></li>
+            <li><a href="../Message/message.html">Message</a></li>
+            <li><a href="../Profile/Profile.html">Your Profile</a></li>
+        </ul>
+    </div>
+    
+    <!--the site name-->
+    <h1 class="company"> UltraC</h1>
+    
+    <ul id="showPosts" class="postlist"></ul>
+
+    <!--connection to the javascript-->
+    <script src="./Home.js"></script>
+</body>
+</html>
+
+<!-- create php file for logout and change the logout link-->

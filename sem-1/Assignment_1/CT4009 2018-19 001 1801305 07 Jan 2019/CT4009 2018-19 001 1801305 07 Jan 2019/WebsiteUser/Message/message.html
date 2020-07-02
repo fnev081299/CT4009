@@ -1,0 +1,40 @@
+<html>
+
+<head>
+	<title> Message </title>
+    <!--connect to the css-->
+    <link href="../css/styles.css" type="text/css" rel = "stylesheet"/>
+    <link href="./EditProfile.css" type="text/css" rel = "stylesheet"/>
+    <!--connect the jquery and the indexdb-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="../../lib/indexeddb.js"></script>
+</head>
+
+<body>
+    <!--name of the site-->
+    <h1 class="company">Messages</h1>
+<!--navigation bar-->	
+<div class="nav">
+        <ul class="main-nav">
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../login/Login.html">Logout</a></li>
+            <li><a href="../Message/message.html">Message</a></li>
+            <!--additional messages navigator-->
+            <li><a href="../Message/messages.html">Messages</a></li>
+            <li><a href="../Profile/Profile.html">Your Profile</a></li>
+        </ul>
+    </div>
+    
+    <!--message form-->
+    <form id="messageForm" class="message">
+        <textarea rows="4" cols="50" id = "txtMessage" name="userPost" placeholder="Message"></textarea><br><br>
+        <input type="file" id="fileImage" name="file"><br><br>
+        <img src="" alt="Image..." id = "bannerImg"><br><br>
+        <input class="btn-margin" id="btnSave" type="submit" value="Save"><br>
+    </form>
+    
+    <!--connection to the js-->
+    <script src="./Home.js"></script>
+    <script src="./HomeDAO.js"></script>
+</body>    
+</html>

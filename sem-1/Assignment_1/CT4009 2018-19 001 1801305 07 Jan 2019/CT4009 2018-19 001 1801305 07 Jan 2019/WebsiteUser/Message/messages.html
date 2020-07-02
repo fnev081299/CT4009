@@ -1,0 +1,42 @@
+<html>
+
+<head>
+	<title> Messages </title>
+    <!--connect to the css-->
+    <link href="../css/styles.css" type="text/css" rel = "stylesheet"/>
+    <link href="./Message.css" type="text/css" rel = "stylesheet"/>
+    <!--connect the jquery and the indexdb-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="../../lib/indexeddb.js"></script>
+</head>
+
+<body>
+    <!--name of the site-->
+    <h1 class="company">Messages</h1>
+<!--navigation bar-->	
+<div class="nav">
+        <ul class="main-nav">
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../login/Login.html">Logout</a></li>
+            <li><a href="../Message/message.html">Message</a></li>
+            <!--additional messages navigator-->
+            <li><a href="../Message/messages.html">Messages</a></li>
+            <li><a href="../Profile/Profile.html">Your Profile</a></li>
+        </ul>
+    </div>
+    <!--table for the messages-->
+    <table border="1" id="tposts" class="View">
+        <tr class="aligncenter">
+            <th>Message Number</th>
+            <th>Username</th>
+            <th>Message</th>
+            <th>Image</th>
+            <th>Block</th>
+        </tr>
+    </table>
+
+    <!--connection to the js-->
+    <script src="./Messages.js"></script>
+    <script src="./MessagesDAO.js"></script>
+</body>    
+</html>

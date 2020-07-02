@@ -1,0 +1,25 @@
+/*this is for the messages and messages to then add styling and positioning to both*/
+body{
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../Images/hpage.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+tr:hover {
+    background-color: grey;
+}
+
+/*this is for the table of messages*/
+.View{
+    color: white;
+    padding: 15px;
+    border: transparent;
+    border-bottom-color: white;
+    text-align: left;
+    padding: 5%;
+    margin-left: 10%;
+    font-size: 18px;
+    border-radius: 20ps;
+}

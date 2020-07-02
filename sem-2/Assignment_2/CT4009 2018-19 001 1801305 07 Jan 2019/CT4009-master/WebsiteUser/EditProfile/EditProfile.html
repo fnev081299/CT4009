@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Edit Profile</title>
+    <!--connect to the css-->
+    <link href="../css/styles.css" type="text/css" rel = "stylesheet"/>
+    <link href="./EditProfile.css" type="text/css" rel = "stylesheet"/>
+    <!--connect to the indexdb and jquery-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="../../lib/indexeddb.js"></script>
+</head>
+
+<body>
+    
+    <!--navigation bar-->
+    <div class="nav">
+        <ul class="main-nav">
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../login/Login.html">Logout</a></li>
+            <li><a href="../Message/message.html">Message</a></li>
+            <li><a href="../Profile/Profile.html">Your Profile</a></li>
+        </ul>
+    </div>
+    
+    <!--the form the user will interact with-->
+      <form id = "formUpdate">
+          <img id ="ImagePreview">
+          <input type="file" id = "fileInputPicture" class = "profile-picture"><br>
+          <textarea id="formUpdateBio" class="box" name="bio" required="required" placeholder="About you"></textarea><br>
+            <input class="btn-margin" type="submit" value="Enter">
+          
+        </form>
+    <!--connect to the js-->
+    <script src="./inputimage.js"></script>
+    <script src="./inputimageDAO.js"></script>
+</body>
+</html>

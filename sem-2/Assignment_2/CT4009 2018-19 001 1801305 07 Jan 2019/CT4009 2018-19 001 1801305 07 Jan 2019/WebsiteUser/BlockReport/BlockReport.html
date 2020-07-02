@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Block/Report</title>
+    <!--links to the css-->
+    <link href="../css/styles.css" type="text/css" rel = "stylesheet"/>
+    <link href="./BlockReport.css" type="text/css" rel = "stylesheet"/>
+</head>
+
+<body>
+    <!--navigation bar-->
+    <div class="nav">
+        <ul class="main-nav">
+            <li><a href="../Home/Home.html">Home</a></li>
+            <li><a href="../login/Login.html">Logout</a></li>
+            <li><a href="../Message/message.html">Message</a></li>
+            <li><a href="../Profile/Profile.html">Your Profile</a></li>
+        </ul>
+    </div>
+
+<h1 class="company">Block or report someone</h1>
+    
+    <!--form the user will fill in-->
+      <form action="message.php" method="post">
+            <input class="box" type="text" name="username" required="required" placeholder="Username of person"><br>
+            <input class="box"type="text" name="message" required="required" placeholder="Resaon"><br>
+            <input type="submit" value="Report">
+            <input type="submit" value="Block">
+        </form>
+</body>
+</html>
